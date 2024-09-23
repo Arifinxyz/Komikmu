@@ -1,0 +1,44 @@
+.profilCon {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative; /* Menjadikan .profilCon sebagai kontainer relatif */
+}
+
+.profilPic {
+    width: 40vh;
+    border-radius: 100%;
+}
+.profilPic2 {
+    width: 38px;
+    border-radius: 100%;
+    margin-right: 3px;
+}
+
+.uploadButton {
+    position: absolute; /* Menempatkan tombol secara absolut di dalam .profilCon */
+    top: 65%; /* Menempatkan tombol di tengah secara vertikal */
+    left: 59%; /* Menempatkan tombol di tengah secara horizontal */
+    background-color: transparent;
+    border: none; /* Menghilangkan border tombol */
+    cursor: pointer; /* Menjadikan tombol sebagai pointer */
+    z-index: 2; /* Pastikan tombol berada di atas gambar profil */
+    border-radius: 100%;
+}
+
+.editLogo {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.uploadButton:hover {
+    background-color: transparent;
+}
+
+.editLogo:hover {
+    border: 2px solid white;
+}
+
+.profilPic2:hover {
+    border: 1px solid grey;
+}
