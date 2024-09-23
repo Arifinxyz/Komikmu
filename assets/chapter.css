@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../assets/img/background.jpeg');
+}
+
+.header {
+    color: white;
+    padding-top: 0.5rem;
+    text-align: center;
+    background-color: blue;
+    display: block;
+    width: 78vw;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.book-cover {
+    width: 50vw;
+    height: auto;
+    margin-top: 0.625rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.book-details {
+    max-width: 37.5rem;
+    text-align: center;
+}
+
+.book-title {
+    margin: 0;
+    font-size: 1.5rem;
+    color:black;
+    text-align: center;
+}
+
+.book-description {
+    color: black;
+    margin-top: 0.625rem;
+}
+
+.title {
+    text-align: start;
+    margin-bottom: 1.25rem;
+}
+
+.chapter-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.chapter-card {
+    background-color: #fff;
+    display: block;
+    padding: 1.25rem;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    margin: 0.1875rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.chapter-card h5 {
+    margin-top: 0;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: 0.625rem;
+}
+
+.edit-button, .delete-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    margin: 0.3125rem;
+}
+
+.delete-button {
+    background-color: #f44336;
+}
+
+.book-description {
+    text-align: justify;
+}
+
+.main {
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
+    padding-top: 3rem;
+    width: 78vw;
+    box-shadow: 0px 0px 0.375rem 0.3125rem #00000040;
+    height: 100%;
+    margin-bottom: 0.625rem;
+    padding-bottom: 1.25rem;
+    border-radius: 0.625rem;
+    background-color: #fff;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.conMain {
+    width: 97.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.judul, h3 {
+    font-weight: bold;
+}

@@ -1,0 +1,260 @@
+/* Styling untuk buku */
+body {
+  background-color: black;
+}
+
+.buku {
+  white-space: nowrap;
+  display: block;
+  flex-wrap: wrap;
+  width: 160px;
+  height: max-content;
+  margin: 5px;
+  padding: 6px;
+}
+
+.buku:hover {
+  background-color: #f0f0f0;
+}
+
+.buku .tittle {
+  white-space: nowrap;       /* Mencegah teks untuk membungkus ke baris berikutnya */
+  overflow: hidden;          /* Menyembunyikan teks yang tidak muat dalam container */
+  text-overflow: ellipsis;   /* Menambahkan tiga titik (…) di akhir teks yang terpotong */
+  max-width: 100%;
+  color: black;
+  margin: auto;
+}
+
+.ch {
+  font-size: small;
+  color: gray;
+  margin: 0px;
+  margin-right: 1px;
+}
+
+.buku a {
+  text-decoration: none;
+}
+.wadahBukuCon {
+  background-color: white;
+  margin: 2vw;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 3px 3px 2px 4px #00000026;
+
+}
+
+.bukuCon {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.sampul {
+  width: 150px; 
+  height: 213.51px;
+}
+
+/* Container untuk slider */
+.tigapopuler {
+  width: 100%; /* Lebar container sesuai dengan lebar viewport */
+  height: 100vh; /* Atur tinggi slider sesuai kebutuhan */
+  overflow: hidden; /* Menyembunyikan bagian slider yang keluar dari container */
+  position: relative; /* Posisi relatif untuk container slider */
+}
+
+/* Slider Container */
+.slider-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute; /* Posisi absolut untuk menggeser slide */
+  transition: transform 0.5s ease-in-out; /* Transisi saat berpindah slide */
+  padding: 0;
+}
+
+/* Each Slide */
+.slide {
+  min-width: 100vw; /* Setiap slide memiliki lebar penuh viewport */
+  height: 100%; /* Tinggi slide sama dengan container slider */
+  position: relative; /* Posisi relatif untuk mengatur posisi slide */
+  flex: none;
+  padding: 0;
+}
+
+/* Styling gambar dalam slide */
+.slide img {
+  width: 100%; /* Memastikan gambar memenuhi lebar slide */
+  height: 100%; /* Memastikan gambar memenuhi tinggi slide */
+  object-fit: cover; /* Mengatur gambar agar menutupi slide tanpa distorsi */
+  display: block; /* Menghindari margin atau padding default dari gambar */
+}
+
+.slide .text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 10px;
+    text-align: start;
+    display: block;
+    justify-content: initial;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    flex-direction: column;
+    
+}
+
+.p {
+  display: -webkit-box;           /* Menggunakan flexbox khusus webkit untuk membatasi baris */
+  -webkit-line-clamp: 2;          /* Membatasi teks hingga dua baris */
+  -webkit-box-orient: vertical;   /* Mengatur orientasi kotak flex menjadi vertikal */
+  overflow: hidden;               /* Menyembunyikan teks yang melampaui dua baris */
+  text-overflow: ellipsis;        /* Menambahkan ellipsis (...) di akhir teks yang terpotong */
+  white-space: normal;            /* Mengizinkan teks untuk membungkus */
+  margin-right: 15px;
+}
+
+
+.judul-slide {
+    margin: 0;
+}
+.gradasi {
+  position: absolute;
+  top: 39.9vh;
+  left: 0;
+  width: 100vw;
+  height: 40vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), transparent);
+}
+footer {
+  background-color: #21376D;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+padding: 38px;
+padding-bottom: 0px;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #E7F0EE;
+  margin-top: 0;
+}
+
+.footer_desk {
+  font-size: 19px;
+  color: #D0D5E0;
+  font-weight: 500;
+}
+
+.wadahSosmed {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.wadahSosmed i {
+  color: #D0D5E0;
+  margin-bottom: 10px;
+}
+
+.quick-links{
+  margin-bottom: 15px;
+}
+
+.sosmed {
+  color: #D0D5E0;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+}
+
+.quick-links a:hover {
+  color: #868686;
+}
+
+.follow-us ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.follow-us li {
+  margin-bottom: 10px;
+}
+
+.follow-us a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 30px;
+  color: #333;
+}
+
+.follow-us a:hover {
+  color: #666;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+.footer-container2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section img {
+  margin-left: 190px;
+}
+
+.logoSosmed i {
+  color: #E7F0EE;
+  font-size: 35px;
+}
+.logoSosmed {
+  margin: 5px;
+}
+
+.footer-container3 {
+  margin-top: 15px;
+  box-shadow: 0px -2px #D0D5E0;
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copyright {
+  color: #D0D5E0;
+}
+
+.copyrightCon{
+  margin: 0px;
+}
+
+.bukuMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
